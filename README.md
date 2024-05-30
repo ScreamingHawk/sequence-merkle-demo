@@ -12,7 +12,11 @@ yarn
 
 Get a wallet connect id from [WalletConnect](https://cloud.walletconnect.com/sign-in).
 
-Copy the `.env.example` file to `.env` and fill in the `VITE_WC_PROJECT_ID` with the id you got from WalletConnect.
+Get a google client id from [Google Cloud Console](https://console.cloud.google.com/).
+
+Get a Sequence WaaS and Kit project id from [Sequence Builder](https://sequence.build/).
+
+Copy the `.env.example` file to `.env` and fill in the variables with the ids you got from the previous steps.
 
 Run the app:
 

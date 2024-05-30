@@ -1,6 +1,6 @@
 import { useAccount, useConnect, useDisconnect } from 'wagmi'
 
-function App() {
+export const App: React.FC = () => {
   const account = useAccount()
   const { connectors, connect, status, error } = useConnect()
   const { disconnect } = useDisconnect()
@@ -42,5 +42,3 @@ function App() {
     </>
   )
 }
-
-export default App

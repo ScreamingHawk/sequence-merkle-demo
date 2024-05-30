@@ -4,10 +4,11 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 import { WagmiProvider } from 'wagmi'
 
-import App from './App.tsx'
-import { config } from './wagmi.ts'
+import { App } from './App.tsx'
+import { wagmiConfig, kitConfig } from './config.ts'
 
 import './index.css'
+import { KitProvider } from '@0xsequence/kit'
 
 globalThis.Buffer = Buffer
 
@@ -15,9 +16,11 @@ const queryClient = new QueryClient()
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
-    <WagmiProvider config={config}>
+    <WagmiProvider config={wagmiConfig}>
       <QueryClientProvider client={queryClient}>
-        <App />
+        <KitProvider config={kitConfig}>
+          <App />
+        </KitProvider>
       </QueryClientProvider>
     </WagmiProvider>
   </React.StrictMode>,
