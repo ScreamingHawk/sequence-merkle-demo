@@ -11,12 +11,15 @@ import { Step3 } from "./Step3";
 import { Step4 } from "./Step4";
 import { SaleDetails, Step5 } from "./Step5";
 import useStyles from "./styles";
+import { useSaleConfig } from "../../providers/SaleConfigProvider";
 
 export const AdminPage: React.FC = () => {
   const theme = useTheme<ThemeProps>();
   const classes = useStyles(theme);
 
   const { address: adminAddress } = useAccount();
+
+  const { saleConfig, setSaleConfig } = useSaleConfig();
 
   const [step, setStep] = useState(1);
   const [itemsAddr, setItemsAddr] = useState<`0x${string}`>();
@@ -43,6 +46,17 @@ export const AdminPage: React.FC = () => {
     return false;
   }
 
+  const moveStep = (step: number) => {
+    // Update sale config when stepping
+    setSaleConfig({
+      ...saleConfig,
+      itemsAddress: itemsAddr,
+      saleAddress: saleAddr,
+      merkleTreeGen,
+    });
+    setStep(step);
+  }
+
   if (!adminAddress) {
     return <div>Loading...</div>;
   }
@@ -60,8 +74,8 @@ export const AdminPage: React.FC = () => {
       <Break />
 
       <div className={classes.pageButtons}>
-        {step > 1 && <Button onClick={() => setStep(step - 1)}>Back</Button>}
-        { step < 5 && <Button onClick={() => setStep(step + 1)} disabled={!canNextStep()}>Next</Button> }
+        {step > 1 && <Button onClick={() => moveStep(step - 1)}>Back</Button>}
+        { step < 5 && <Button onClick={() => moveStep(step + 1)} disabled={!canNextStep()}>Next</Button> }
       </div>
     </>
   );

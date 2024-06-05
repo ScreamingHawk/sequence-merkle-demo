@@ -1,13 +1,14 @@
 import { useTheme } from "react-jss";
 import { zeroAddress } from "viem";
 import { useReadContract, useWriteContract } from "wagmi";
+import { Accent } from "../../components/Accent";
 import { Button } from "../../components/Button";
 import { Form, FormLabel } from "../../components/Form";
 import { H2 } from "../../components/Heading";
+import { Link } from "../../components/Link";
 import { ERC721_SALE_ABI } from "../../contracts/abi";
 import { ThemeProps } from "../../providers/ThemeProvider";
 import useStyles from "./styles";
-import { Accent } from "../../components/Accent";
 
 export type SaleDetails = {
   supplyCap: bigint;
@@ -17,7 +18,7 @@ export type SaleDetails = {
   endTime: bigint;
 };
 
-type SaleDetailsWithMerkle = SaleDetails & {
+export type SaleDetailsWithMerkle = SaleDetails & {
   merkleRoot: string;
 };
 
@@ -72,16 +73,20 @@ export const Step5: React.FC<Step5Props> = ({
     });
   };
 
+  if (saleDetailsResult.isLoading) {
+    return <div>Loading...</div>;
+  }
+
   let isUpdated = false;
   if (saleDetailsResult.data) {
     const currentSaleDetails = saleDetailsResult.data as SaleDetailsWithMerkle;
-    console.log(currentSaleDetails, saleDetails);
+    const now = BigInt(Math.floor(Date.now() / 1000));
     isUpdated =
       currentSaleDetails.supplyCap === saleDetails.supplyCap &&
       currentSaleDetails.cost === saleDetails.cost &&
       currentSaleDetails.paymentToken === saleDetails.paymentToken &&
-      currentSaleDetails.startTime === saleDetails.startTime &&
-      currentSaleDetails.endTime === saleDetails.endTime &&
+      currentSaleDetails.startTime < now &&
+      currentSaleDetails.endTime > now &&
       currentSaleDetails.merkleRoot === merkleRoot;
   }
 
@@ -163,8 +168,8 @@ export const Step5: React.FC<Step5Props> = ({
       </Form>
       {isUpdated ? (
         <>
-          <p className={classes.note}>Sale details are up to date!</p>
           <Accent>Congrats! Your sale is active!</Accent>
+          <p>Head over to the <Link useRouter href="/mint">Mint page</Link> to try it out.</p>
         </>
       ) : (
         <Button onClick={updateSaleDetails}>Update Sale Details</Button>

@@ -1,3 +1,4 @@
+import ERC20_ABI_JSON from "./ERC20.json";
 import ERC721_ITEMS_ABI_JSON from "./ERC721Items.json";
 import ERC721_ITEMS_FACTORY_ABI_JSON from "./ERC721ItemsFactory.json";
 import ERC721_SALE_ABI_JSON from "./ERC721Sale.json";
@@ -13,12 +14,14 @@ const normaliseABI = (abi: any) => {
   });
 };
 
+const ERC20_ABI = normaliseABI(ERC20_ABI_JSON);
 const ERC721_ITEMS_ABI = normaliseABI(ERC721_ITEMS_ABI_JSON);
 const ERC721_ITEMS_FACTORY_ABI = normaliseABI(ERC721_ITEMS_FACTORY_ABI_JSON);
 const ERC721_SALE_ABI = normaliseABI(ERC721_SALE_ABI_JSON);
 const ERC721_SALE_FACTORY_ABI = normaliseABI(ERC721_SALE_FACTORY_ABI_JSON);
 
 export {
+	ERC20_ABI,
   ERC721_ITEMS_ABI,
   ERC721_ITEMS_FACTORY_ABI,
   ERC721_SALE_ABI,

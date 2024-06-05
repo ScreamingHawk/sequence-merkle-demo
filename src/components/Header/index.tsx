@@ -3,6 +3,7 @@ import useStyles from "./styles";
 import { useAccount, useConnect, useDisconnect } from "wagmi";
 import { Button } from "../Button";
 import { Select } from "../Select";
+import { Link } from "../Link";
 
 export const Header: React.FC = () => {
   const classes = useStyles();
@@ -15,9 +16,9 @@ export const Header: React.FC = () => {
   return (
     <nav className={classes.container}>
       <div className={classes.innerContainer}>
-        <a href="/" className={classes.logo}>
-          🌳
-        </a>
+        <Link useRouter href="/">
+          <span className={classes.logo}>🌳</span>
+        </Link>
         Merkle Tree Demo
       </div>
       <div className={classes.innerContainer}>
