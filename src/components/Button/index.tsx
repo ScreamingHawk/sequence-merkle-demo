@@ -22,6 +22,7 @@ export const Button: React.FC<ButtonProps> = ({
   }
   if (disabled) {
     className += ` ${classes.disabled}`
+    props.onClick = undefined
   }
 
   return <button className={className} {...props}></button>

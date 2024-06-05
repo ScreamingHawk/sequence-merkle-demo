@@ -1,0 +1,136 @@
+
+[
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "factoryOwner",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "constructor"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "proxyAddr",
+        "type": "address",
+        "indexed": false
+      }
+    ],
+    "type": "event",
+    "name": "ERC721SaleDeployed",
+    "anonymous": false
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "previousOwner",
+        "type": "address",
+        "indexed": true
+      },
+      {
+        "internalType": "address",
+        "name": "newOwner",
+        "type": "address",
+        "indexed": true
+      }
+    ],
+    "type": "event",
+    "name": "OwnershipTransferred",
+    "anonymous": false
+  },
+  {
+    "inputs": [],
+    "stateMutability": "view",
+    "type": "function",
+    "name": "beacon",
+    "outputs": [
+      {
+        "internalType": "contract UpgradeableBeacon",
+        "name": "",
+        "type": "address"
+      }
+    ]
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "proxyOwner",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "tokenOwner",
+        "type": "address"
+      },
+      { "internalType": "address", "name": "items", "type": "address" }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "function",
+    "name": "deploy",
+    "outputs": [
+      { "internalType": "address", "name": "proxyAddr", "type": "address" }
+    ]
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "proxyOwner",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "tokenOwner",
+        "type": "address"
+      },
+      { "internalType": "address", "name": "items", "type": "address" }
+    ],
+    "stateMutability": "view",
+    "type": "function",
+    "name": "determineAddress",
+    "outputs": [
+      { "internalType": "address", "name": "proxyAddr", "type": "address" }
+    ]
+  },
+  {
+    "inputs": [],
+    "stateMutability": "view",
+    "type": "function",
+    "name": "owner",
+    "outputs": [
+      { "internalType": "address", "name": "", "type": "address" }
+    ]
+  },
+  {
+    "inputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function",
+    "name": "renounceOwnership"
+  },
+  {
+    "inputs": [
+      { "internalType": "address", "name": "newOwner", "type": "address" }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "function",
+    "name": "transferOwnership"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "implementation",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "function",
+    "name": "upgradeBeacon"
+  }
+]

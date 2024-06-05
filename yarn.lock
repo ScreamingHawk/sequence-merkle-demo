@@ -25,10 +25,38 @@
     "@0xsequence/utils" "1.9.27"
     "@0xsequence/wallet" "1.9.27"
 
+"0xsequence@^1.9.28":
+  version "1.9.28"
+  resolved "https://registry.yarnpkg.com/0xsequence/-/0xsequence-1.9.28.tgz#6433037075bcd7010874f3ef5e70fbcd4374fa2b"
+  integrity sha512-i6oKRBT5vPHD+ijU9ctKsfXnWffXIID6tFbJljr71Lhtd5MbHrCYmGBMoUT+Ay0GhGhYUo08x3wBsH7m7ZwX1Q==
+  dependencies:
+    "@0xsequence/abi" "1.9.28"
+    "@0xsequence/account" "1.9.28"
+    "@0xsequence/api" "1.9.28"
+    "@0xsequence/auth" "1.9.28"
+    "@0xsequence/core" "1.9.28"
+    "@0xsequence/guard" "1.9.28"
+    "@0xsequence/indexer" "1.9.28"
+    "@0xsequence/metadata" "1.9.28"
+    "@0xsequence/migration" "1.9.28"
+    "@0xsequence/multicall" "1.9.28"
+    "@0xsequence/network" "1.9.28"
+    "@0xsequence/provider" "1.9.28"
+    "@0xsequence/relayer" "1.9.28"
+    "@0xsequence/sessions" "1.9.28"
+    "@0xsequence/signhub" "1.9.28"
+    "@0xsequence/utils" "1.9.28"
+    "@0xsequence/wallet" "1.9.28"
+
 "@0xsequence/abi@1.9.27":
   version "1.9.27"
   resolved "https://registry.yarnpkg.com/@0xsequence/abi/-/abi-1.9.27.tgz#a6e7ccf4c41c0cde6e49e9800869cccf7de6c6ce"
   integrity sha512-v80HiQNJ3rTPG3DUI2CuxwL3EjBkDixz0Fv4w6zFEcjF3niZr/baeV4EhZSWDH/NzuZu5OPNfpsKPpMPDgTIEg==
+
+"@0xsequence/abi@1.9.28":
+  version "1.9.28"
+  resolved "https://registry.yarnpkg.com/@0xsequence/abi/-/abi-1.9.28.tgz#789b789c63c888fb387a8d9b845a55878b5c36f1"
+  integrity sha512-WTDcd5lDCve0UbX7w2gr8v3KI1TKyJaeVzmh7uhtZ/TJ7XLKxGfFQou+d3OHEqHOI3QqbdVb6ui732MJfF4eJw==
 
 "@0xsequence/account@1.9.27":
   version "1.9.27"
@@ -45,10 +73,30 @@
     "@0xsequence/wallet" "1.9.27"
     ethers "^5.5.2"
 
+"@0xsequence/account@1.9.28":
+  version "1.9.28"
+  resolved "https://registry.yarnpkg.com/@0xsequence/account/-/account-1.9.28.tgz#51f1929fd99baa577addeaf5929352fd9d3ed287"
+  integrity sha512-57NcRsWTbwemvg4B8hBvq7cX2USUOl+c2G5ve0JfpWU4CGw1KSRnEBJVvIVdKO3miWqG7cfNLzjowyVSU3gJrQ==
+  dependencies:
+    "@0xsequence/abi" "1.9.28"
+    "@0xsequence/core" "1.9.28"
+    "@0xsequence/migration" "1.9.28"
+    "@0xsequence/network" "1.9.28"
+    "@0xsequence/relayer" "1.9.28"
+    "@0xsequence/sessions" "1.9.28"
+    "@0xsequence/utils" "1.9.28"
+    "@0xsequence/wallet" "1.9.28"
+    ethers "^5.5.2"
+
 "@0xsequence/api@1.9.27", "@0xsequence/api@^1.9.27":
   version "1.9.27"
   resolved "https://registry.yarnpkg.com/@0xsequence/api/-/api-1.9.27.tgz#279b5117c4e61df59124ea8d78017e6b81824893"
   integrity sha512-ZFyHFdxkgD4NzDXQ0uGPOFurk4IHTHHP8eEUQiry5ItY3Nks6PK/YrmbFpL9uZPeenMb6zHOeyZiWa/FLDvHBw==
+
+"@0xsequence/api@1.9.28":
+  version "1.9.28"
+  resolved "https://registry.yarnpkg.com/@0xsequence/api/-/api-1.9.28.tgz#d09cc710479edee50b8a5ffe142aa46f7669f4ef"
+  integrity sha512-Zjk2ga7GyHdy+HXEjozb9vdERdIVKP0BF4ZimmwflUFGQXyiYbpMSjDTpd2hiEQRoi5Uy7+iHXNhQXSJSLruAA==
 
 "@0xsequence/auth@1.9.27", "@0xsequence/auth@^1.9.27":
   version "1.9.27"
@@ -69,12 +117,38 @@
     "@0xsequence/utils" "1.9.27"
     "@0xsequence/wallet" "1.9.27"
 
+"@0xsequence/auth@1.9.28":
+  version "1.9.28"
+  resolved "https://registry.yarnpkg.com/@0xsequence/auth/-/auth-1.9.28.tgz#4cbfd0d138557a52030051102ea04eacb680dad8"
+  integrity sha512-bSCWFLYhuxnuRaBhCqGpuCWzYUHQjBMhxfdfhY17+CgzDEL5KC8IDJJa+8DZ8RDUKFkL2zXsirKna29qXTk2tA==
+  dependencies:
+    "@0xsequence/abi" "1.9.28"
+    "@0xsequence/account" "1.9.28"
+    "@0xsequence/api" "1.9.28"
+    "@0xsequence/core" "1.9.28"
+    "@0xsequence/ethauth" "^0.8.1"
+    "@0xsequence/indexer" "1.9.28"
+    "@0xsequence/metadata" "1.9.28"
+    "@0xsequence/migration" "1.9.28"
+    "@0xsequence/network" "1.9.28"
+    "@0xsequence/sessions" "1.9.28"
+    "@0xsequence/signhub" "1.9.28"
+    "@0xsequence/utils" "1.9.28"
+    "@0xsequence/wallet" "1.9.28"
+
 "@0xsequence/core@1.9.27", "@0xsequence/core@^1.9.27":
   version "1.9.27"
   resolved "https://registry.yarnpkg.com/@0xsequence/core/-/core-1.9.27.tgz#199181bc567e68fb550f16b364105c6bde70c6e2"
   integrity sha512-FEe6MfNB86hcSEQ4QkD4Vz+UIR8Zu4yNk2C0xGskcSC264MX2lJVzmDeksG7oLXgkfWlzGz1MUxSTYQDUa0s9Q==
   dependencies:
     "@0xsequence/abi" "1.9.27"
+
+"@0xsequence/core@1.9.28":
+  version "1.9.28"
+  resolved "https://registry.yarnpkg.com/@0xsequence/core/-/core-1.9.28.tgz#3dfbf3bd089258e29c2580ef1b94c6ef41212031"
+  integrity sha512-DdS2AgkWdebpW0Jqvd3oli7rk8sPfN+gwAnz4jt7aYVnJs3Md+aFfW6k7k+2Z9EWf4gss/BlHmXWVirmFXL8jA==
+  dependencies:
+    "@0xsequence/abi" "1.9.28"
 
 "@0xsequence/design-system@^1.7.1":
   version "1.7.1"
@@ -113,10 +187,26 @@
     "@0xsequence/utils" "1.9.27"
     ethers "^5.7.2"
 
+"@0xsequence/guard@1.9.28":
+  version "1.9.28"
+  resolved "https://registry.yarnpkg.com/@0xsequence/guard/-/guard-1.9.28.tgz#090950095121f685b30537637c29115ccdfb7cea"
+  integrity sha512-3f8guUPP+MJu46YcobqAL1PN4uOOynZ6CMA1g2FO1ZMsShcHOSMyROxpbUWjg44FeUdCw7Hqf6ofkJK3901lpg==
+  dependencies:
+    "@0xsequence/account" "1.9.28"
+    "@0xsequence/core" "1.9.28"
+    "@0xsequence/signhub" "1.9.28"
+    "@0xsequence/utils" "1.9.28"
+    ethers "^5.7.2"
+
 "@0xsequence/indexer@1.9.27", "@0xsequence/indexer@^1.9.27":
   version "1.9.27"
   resolved "https://registry.yarnpkg.com/@0xsequence/indexer/-/indexer-1.9.27.tgz#8ff00e520f0c01a1e2f802a27f6182bac4054ed0"
   integrity sha512-YzwJMwsEucDVgoGrjY9AV4R1TvUWcTzqmbEAGHWBOkOpKv/thVRZCbUIBtMwFyGo8FRLJrXHPoQhWs2XKiEoEQ==
+
+"@0xsequence/indexer@1.9.28":
+  version "1.9.28"
+  resolved "https://registry.yarnpkg.com/@0xsequence/indexer/-/indexer-1.9.28.tgz#b936bf4d7bae30e982d88ef9856d4094d2420157"
+  integrity sha512-Hmm9vVB6OzBHNpuhRSAkYCTU7GeTDwvTTeRycTxMGO6JM73bg6mkvwRr8c2WfWovBA3gkLIdQCU1Rx6SGMiCqw==
 
 "@0xsequence/kit-connectors@^2.8.3":
   version "2.8.3"
@@ -170,6 +260,11 @@
   resolved "https://registry.yarnpkg.com/@0xsequence/metadata/-/metadata-1.9.27.tgz#5aaa446efb5b78fbb6864744ac8920acbaab0cca"
   integrity sha512-dbBd9uOVDe09mJleszo9ERIGdfhiIP8aIZDEHnlwR+NR8bgKyFBX94JjRFAzN3wTyjGobylBBXqYi1Vv/B4TDA==
 
+"@0xsequence/metadata@1.9.28":
+  version "1.9.28"
+  resolved "https://registry.yarnpkg.com/@0xsequence/metadata/-/metadata-1.9.28.tgz#cc9d1550917c4e31204bedf6b56ad3f343e5d277"
+  integrity sha512-PtYBX9csTtmTpS1waaykJfXXhnWr7iZpdJE+8iOKarmMrbFXEVAXHUKgVyA8xg/rS5ovWqkAacG4Wq5LqSiSfg==
+
 "@0xsequence/migration@1.9.27":
   version "1.9.27"
   resolved "https://registry.yarnpkg.com/@0xsequence/migration/-/migration-1.9.27.tgz#a9f9807a7ced84255f9a7b0c0fcb6578c6e33665"
@@ -178,6 +273,16 @@
     "@0xsequence/abi" "1.9.27"
     "@0xsequence/core" "1.9.27"
     "@0xsequence/wallet" "1.9.27"
+    ethers "^5.5.2"
+
+"@0xsequence/migration@1.9.28":
+  version "1.9.28"
+  resolved "https://registry.yarnpkg.com/@0xsequence/migration/-/migration-1.9.28.tgz#f39c9de87c396216359f4129a35f5e8963666aed"
+  integrity sha512-rGlgBhj8R/T+ZV5FHG05l6pgJwgBP8Isea3nDzi9izbhCX8+bcQofUlRfB/XLARRoSWo8tK4Rg/QaZ2AmwQ0Hw==
+  dependencies:
+    "@0xsequence/abi" "1.9.28"
+    "@0xsequence/core" "1.9.28"
+    "@0xsequence/wallet" "1.9.28"
     ethers "^5.5.2"
 
 "@0xsequence/multicall@1.9.27":
@@ -189,6 +294,15 @@
     "@0xsequence/network" "1.9.27"
     "@0xsequence/utils" "1.9.27"
 
+"@0xsequence/multicall@1.9.28":
+  version "1.9.28"
+  resolved "https://registry.yarnpkg.com/@0xsequence/multicall/-/multicall-1.9.28.tgz#a58753e91f1122defad2593465d0fa9aa46f4a01"
+  integrity sha512-4MEvnBYc5ZmWa+4BJVZWbRl+EVWuaAGSnPHGzeSMQuhRT3f1ChaFvUH+1QpaIOF4PBVGR+AYMPQeHZ3NStXHjg==
+  dependencies:
+    "@0xsequence/abi" "1.9.28"
+    "@0xsequence/network" "1.9.28"
+    "@0xsequence/utils" "1.9.28"
+
 "@0xsequence/network@1.9.27", "@0xsequence/network@^1.9.27":
   version "1.9.27"
   resolved "https://registry.yarnpkg.com/@0xsequence/network/-/network-1.9.27.tgz#ba0cdefaa6c33ca86450ba470c23ea4452e59db1"
@@ -198,6 +312,16 @@
     "@0xsequence/indexer" "1.9.27"
     "@0xsequence/relayer" "1.9.27"
     "@0xsequence/utils" "1.9.27"
+
+"@0xsequence/network@1.9.28":
+  version "1.9.28"
+  resolved "https://registry.yarnpkg.com/@0xsequence/network/-/network-1.9.28.tgz#4c3cb939fe25f92d65e6379bb78a36907d9f87f5"
+  integrity sha512-tpT5+uPHotiwzYGbZ7VQow2dqUpnlJ8dFh65VHS05f8T0WARmUv09chMNvXp6F6SFOI460XsVps/cwqEdIBwWg==
+  dependencies:
+    "@0xsequence/core" "1.9.28"
+    "@0xsequence/indexer" "1.9.28"
+    "@0xsequence/relayer" "1.9.28"
+    "@0xsequence/utils" "1.9.28"
 
 "@0xsequence/provider@1.9.27", "@0xsequence/provider@^1.9.27":
   version "1.9.27"
@@ -217,6 +341,24 @@
     eventemitter2 "^6.4.5"
     webextension-polyfill "^0.10.0"
 
+"@0xsequence/provider@1.9.28":
+  version "1.9.28"
+  resolved "https://registry.yarnpkg.com/@0xsequence/provider/-/provider-1.9.28.tgz#79dc8235ac30aa7456dd40358e2bd2fa040e96fe"
+  integrity sha512-mk7GqNw0s+/A9X8H7gn7Gxa+yoU6zPTZqCxWH5VNXOWPvYA3GqpgUQYbn7Z0WFLiUnZKrwm1/73pRcW7JtR4nQ==
+  dependencies:
+    "@0xsequence/abi" "1.9.28"
+    "@0xsequence/account" "1.9.28"
+    "@0xsequence/auth" "1.9.28"
+    "@0xsequence/core" "1.9.28"
+    "@0xsequence/migration" "1.9.28"
+    "@0xsequence/network" "1.9.28"
+    "@0xsequence/relayer" "1.9.28"
+    "@0xsequence/utils" "1.9.28"
+    "@0xsequence/wallet" "1.9.28"
+    "@databeat/tracker" "^0.9.1"
+    eventemitter2 "^6.4.5"
+    webextension-polyfill "^0.10.0"
+
 "@0xsequence/relayer@1.9.27":
   version "1.9.27"
   resolved "https://registry.yarnpkg.com/@0xsequence/relayer/-/relayer-1.9.27.tgz#9491d0a81b1c8d21987b96faf94489a275cc1298"
@@ -226,6 +368,15 @@
     "@0xsequence/core" "1.9.27"
     "@0xsequence/utils" "1.9.27"
 
+"@0xsequence/relayer@1.9.28":
+  version "1.9.28"
+  resolved "https://registry.yarnpkg.com/@0xsequence/relayer/-/relayer-1.9.28.tgz#2fa186b081a0ef92e0e6fa5f87ca61f341edaead"
+  integrity sha512-8aTOo8ae2Ojt+/UJZCB5i0hCvKGdJeOwagkdooWHJlOTEUMb2bJe2B6k2lMfl494tbg+OhTnukz7SIxpRZH5uw==
+  dependencies:
+    "@0xsequence/abi" "1.9.28"
+    "@0xsequence/core" "1.9.28"
+    "@0xsequence/utils" "1.9.28"
+
 "@0xsequence/replacer@1.9.27":
   version "1.9.27"
   resolved "https://registry.yarnpkg.com/@0xsequence/replacer/-/replacer-1.9.27.tgz#c29dacf82919e99c0bafe90ce2b3ec81c8befefb"
@@ -233,6 +384,14 @@
   dependencies:
     "@0xsequence/abi" "1.9.27"
     "@0xsequence/core" "1.9.27"
+
+"@0xsequence/replacer@1.9.28":
+  version "1.9.28"
+  resolved "https://registry.yarnpkg.com/@0xsequence/replacer/-/replacer-1.9.28.tgz#6afe09b7ee65e1e45f8d825e03e5d90c94c64030"
+  integrity sha512-JUaJ2f4O7sic/UPiw7/0Db8cOZa+YeT3eqxO9ST8iW0TQrm+iQVRZmQteU/bH4HmLjhkWZhWtgn8sHIQx1NmXA==
+  dependencies:
+    "@0xsequence/abi" "1.9.28"
+    "@0xsequence/core" "1.9.28"
 
 "@0xsequence/sessions@1.9.27":
   version "1.9.27"
@@ -245,6 +404,17 @@
     ethers "^5.5.2"
     idb "^7.1.1"
 
+"@0xsequence/sessions@1.9.28":
+  version "1.9.28"
+  resolved "https://registry.yarnpkg.com/@0xsequence/sessions/-/sessions-1.9.28.tgz#c819d3523d34ef54c5547eb2d19629a933aa7412"
+  integrity sha512-Y15RPtf8ciYrSPzHS9VbL1M1/XHcXfL/2lbLTC0OXHY8et+rv1PuNA/E4HPL+TGGUlp+J0JZSEJBWpMnJGRTIQ==
+  dependencies:
+    "@0xsequence/core" "1.9.28"
+    "@0xsequence/migration" "1.9.28"
+    "@0xsequence/replacer" "1.9.28"
+    ethers "^5.5.2"
+    idb "^7.1.1"
+
 "@0xsequence/signhub@1.9.27":
   version "1.9.27"
   resolved "https://registry.yarnpkg.com/@0xsequence/signhub/-/signhub-1.9.27.tgz#6b9b79836bd5c8b14e5d28c957e6290b02326ed1"
@@ -253,10 +423,25 @@
     "@0xsequence/core" "1.9.27"
     ethers "^5.5.2"
 
+"@0xsequence/signhub@1.9.28":
+  version "1.9.28"
+  resolved "https://registry.yarnpkg.com/@0xsequence/signhub/-/signhub-1.9.28.tgz#0406f209f42464215d72f06d66b8565bb6c2b1af"
+  integrity sha512-TT4R3tRNxYx0fy6HkuZnrR9+Ji6Sa9qIc2otBheJXaHAO8pYi9I9thcYn1gYwHuNwSKTD5CQ2KwCAuvHwX62mw==
+  dependencies:
+    "@0xsequence/core" "1.9.28"
+    ethers "^5.5.2"
+
 "@0xsequence/utils@1.9.27", "@0xsequence/utils@^1.9.27":
   version "1.9.27"
   resolved "https://registry.yarnpkg.com/@0xsequence/utils/-/utils-1.9.27.tgz#c4998edf10c190169e2dd7a8e7e03d3148f42d90"
   integrity sha512-NbFLeHNV+cwq3V+0jtlo6zVj0GoZxykEBV9Hl4tGBuE4EjyZL2GN/vayXHsjfIQG/3w343ae4CojsGBCs/foyg==
+  dependencies:
+    js-base64 "^3.7.2"
+
+"@0xsequence/utils@1.9.28", "@0xsequence/utils@^1.9.28":
+  version "1.9.28"
+  resolved "https://registry.yarnpkg.com/@0xsequence/utils/-/utils-1.9.28.tgz#83a31f56a1b5b2ec8be84b81f0dfa67c774a405d"
+  integrity sha512-4+ykVbq1IDEh8EjgIjKSdCJp4jctSlD9xYOCnFdehwTmTlGRyo7I4QBQGL1Iz3ZEcuZ6G8/Pg+TMHxDFGK0kjg==
   dependencies:
     js-base64 "^3.7.2"
 
@@ -289,6 +474,18 @@
     "@0xsequence/relayer" "1.9.27"
     "@0xsequence/signhub" "1.9.27"
     "@0xsequence/utils" "1.9.27"
+
+"@0xsequence/wallet@1.9.28":
+  version "1.9.28"
+  resolved "https://registry.yarnpkg.com/@0xsequence/wallet/-/wallet-1.9.28.tgz#6c9b999413b28fad5c61d05455286f125f2f555b"
+  integrity sha512-ZfQNIIBdG8dtQFuGLhr1U0dej+jPFIq66f/hocsGxDz4NODhQ5jEhriLqCv8dRVFYhboz0839U34B4q0h+hnRA==
+  dependencies:
+    "@0xsequence/abi" "1.9.28"
+    "@0xsequence/core" "1.9.28"
+    "@0xsequence/network" "1.9.28"
+    "@0xsequence/relayer" "1.9.28"
+    "@0xsequence/signhub" "1.9.28"
+    "@0xsequence/utils" "1.9.28"
 
 "@adraffy/ens-normalize@1.10.0":
   version "1.10.0"
@@ -6435,7 +6632,7 @@ valtio@1.11.2:
     proxy-compare "2.5.1"
     use-sync-external-store "1.2.0"
 
-viem@2.x, viem@^2.12.0:
+viem@2.x:
   version "2.13.1"
   resolved "https://registry.yarnpkg.com/viem/-/viem-2.13.1.tgz#a2e5b4f9396f80e6d812af49db23eda40d2a6e72"
   integrity sha512-QaSCtPXb9uVaba+vOsyCFX21BDWNbjBOuXIWWlQXLmECtr/mbJ64XUHyFz6KLvUwAsQ+vxUQVwgmXc3jVMxwYw==
@@ -6461,6 +6658,20 @@ viem@^1.0.0, viem@^1.1.4:
     "@scure/bip39" "1.2.1"
     abitype "0.9.8"
     isows "1.0.3"
+    ws "8.13.0"
+
+viem@^2.13.6:
+  version "2.13.6"
+  resolved "https://registry.yarnpkg.com/viem/-/viem-2.13.6.tgz#32d1dc3215627044972bb905db4adfcf674655f1"
+  integrity sha512-BhvYhLrExC9P4AH9Gu/2A3VPUFkJT/ayH+A9anco2Ja/D0h3NStq+2uF4htcly1e68/U7IOrlCyX3Jz9zqeEJA==
+  dependencies:
+    "@adraffy/ens-normalize" "1.10.0"
+    "@noble/curves" "1.2.0"
+    "@noble/hashes" "1.3.2"
+    "@scure/bip32" "1.3.2"
+    "@scure/bip39" "1.2.1"
+    abitype "1.0.0"
+    isows "1.0.4"
     ws "8.13.0"
 
 vite@^4.4.9:
