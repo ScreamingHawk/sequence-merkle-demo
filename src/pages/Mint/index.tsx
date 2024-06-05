@@ -111,7 +111,7 @@ export const MintPage: React.FC = () => {
     await writeContractAsync({
       abi: ERC20_ABI,
       address: saleDetails.paymentToken,
-      functionName: "updateAllowance",
+      functionName: "approve",
       args: [saleConfig.saleAddress!, totalCost],
     });
   };

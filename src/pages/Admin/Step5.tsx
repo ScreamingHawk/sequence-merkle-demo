@@ -50,8 +50,8 @@ export const Step5: React.FC<Step5Props> = ({
     const now = BigInt(Math.floor(Date.now() / 1000));
     saleDetails = {
       supplyCap: 100n,
-      cost: 0n,
-      paymentToken: zeroAddress,
+      cost: 10000000000000000n,
+      paymentToken: "0xfff9976782d46cc05630d1f6ebab18b2324d6b14",
       startTime: now,
       endTime: now + (60n * 60n), // +1 hour
     };
@@ -124,7 +124,7 @@ export const Step5: React.FC<Step5Props> = ({
           <input
             type="text"
             placeholder="Payment Token"
-            value={saleDetails.paymentToken ?? ""}
+            value={saleDetails.paymentToken ?? zeroAddress}
             onChange={(e) =>
               setSaleDetails({
                 ...saleDetails,
